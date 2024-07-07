@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  header{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: flex-end;
+  }
+  .opciones{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 6px;
+  }
+  .opciones a{
+    color: #1f1f1f;
+    font: 13px Roboto,Arial,sans-serif;
+  }
+  .opciones a:hover{
+    text-decoration: underline;
+  }
+  .user img{
+    border-radius: 20px;
+    height: 30px;
+  }
