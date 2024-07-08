@@ -22,8 +22,19 @@
     align-items: center;
     padding: 6px;
   }
+  .menu_buttons{
+    position: relative;
+  }
+  .menu_buttons a{
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+  }
   .opciones a{
-    color: #1f1f1f;
+    color: #3c4043;
     font: 13px Roboto,Arial,sans-serif;
   }
   .opciones a:hover{
@@ -33,3 +44,78 @@
     border-radius: 20px;
     height: 30px;
   }
+  .opciones .labs:hover:before, .opciones .apps:hover:before {
+    outline: none;
+      background: #444746;
+      background: var(--gm3-sys-color-on-surface-variant, #444746);
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+      content: " ";
+      height: 100%;
+      left: 0;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      -webkit-transition: opacity .3s ease-out;
+      -webkit-transition: opacity .3s ease-out;
+      transition: opacity .3s ease-out;
+      width: 100%;
+  }
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.logo{
+  padding: 10px 0;
+}
+.searcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid gray;
+  border-radius: 24px;
+}
+.searcher span {
+  width: 30px;
+}
+.searcher .text{
+  width: 100%;
+}
+.searcher .area {
+  min-width: 350px;
+  display: flex;
+  resize: none;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding-top: 14px;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  line-height: 14px;
+  overflow-x: hidden;
+}
+
+.searcher-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+.searcher-buttons button{
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(248 249 250);
+  padding: 12px;
+  color: #3c4043;
+}
+p {
+  font-size: small;
+  color: rgb(8, 8, 8);
+}
